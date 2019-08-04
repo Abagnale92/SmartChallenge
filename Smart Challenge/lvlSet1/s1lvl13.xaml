@@ -1,0 +1,38 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Smart_Challenge.s1lvl13"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape" Orientation="Landscape"
+    mc:Ignorable="d" d:DesignHeight="480" d:DesignWidth="800"
+    shell:SystemTray.IsVisible="False" Loaded="PhoneApplicationPage_Loaded">
+
+    <!--LayoutRoot è la griglia radice in cui viene inserito tutto il contenuto della pagina-->
+    <!--Codice di esempio che illustra l'utilizzo di ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Pulsante 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Pulsante 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="Voce di menu 1"/>
+                <shell:ApplicationBarMenuItem Text="Voce di menu 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+    <Grid Height="480" Name="grid1" Width="800">
+        <Image Height="480" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="800" Source="/Smart%20Challenge;component/Images/bgLvl.jpg" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="32" FontWeight="SemiBold" Foreground="#FF006CFF" HorizontalAlignment="Center" Margin="10,22,10,370" Name="Instr" Text="" TextAlignment="Center" TextWrapping="Wrap" Width="780" />
+        <TextBlock x:Name="num1" HorizontalAlignment="Right" Margin="0,0,185,174" TextWrapping="Wrap" Width="41" Foreground="#FFF100FF" Height="66" VerticalAlignment="Bottom" Text="1" FontSize="40" MouseEnter="num1_MouseEnter" />
+        <TextBlock x:Name="num2" HorizontalAlignment="Left" Margin="121,0,0,138" TextWrapping="Wrap" Width="65" Foreground="#FF0F24DA" FontSize="32" Height="63" VerticalAlignment="Bottom" MouseEnter="num2_MouseEnter"><Run Text=" "/><Run Text="11"/></TextBlock>
+        <TextBlock x:Name="num3" Margin="247,0,0,109" TextWrapping="Wrap" Foreground="#FF1FFF00" Text="10001" FontSize="13.333" RenderTransformOrigin="0.403,1.882" HorizontalAlignment="Left" Height="32" VerticalAlignment="Bottom" Width="36" MouseEnter="num3_MouseEnter" />
+        <TextBlock x:Name="num4" Margin="311,125,390,0" TextWrapping="Wrap" Foreground="Red" FontSize="96" Height="108" VerticalAlignment="Top" MouseEnter="num4_MouseEnter"><Run Text=" "/><Run Text="5"/></TextBlock>
+        <TextBlock x:Name="num5" HorizontalAlignment="Right" Margin="0,0,308,138" TextWrapping="Wrap" Width="52" Foreground="#FF00E2FF" Height="45" VerticalAlignment="Bottom" FontSize="24" MouseEnter="num5_MouseEnter"><Run Text=" "/><Run Text="395"/></TextBlock>
+        <TextBlock x:Name="num6" HorizontalAlignment="Right" Margin="0,116,144,0" TextWrapping="Wrap" Width="66" Foreground="#FF00FD49" Text="50" FontSize="48" Height="94" VerticalAlignment="Top" MouseEnter="num6_MouseEnter" />
+    </Grid>
+</phone:PhoneApplicationPage>

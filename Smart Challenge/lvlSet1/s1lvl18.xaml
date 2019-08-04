@@ -1,0 +1,27 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Smart_Challenge.lvlSet1.s1lvl18"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape" Orientation="Landscape"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False" Loaded="PhoneApplicationPage_Loaded">
+    <Grid x:Name="grid1" HorizontalAlignment="Left" Height="480" VerticalAlignment="Top" Width="800">
+        <Image x:Name="image1" HorizontalAlignment="Center" Height="480" VerticalAlignment="Center" Width="800" Source="/Smart Challenge;component/Images/bgLvl.jpg"/>
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="32" FontWeight="SemiBold" Foreground="#FF006CFF" HorizontalAlignment="Center" Margin="10,22,10,367" x:Name="Instr" Text="" TextAlignment="Center" TextWrapping="Wrap" Width="780" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="80" FontWeight="SemiBold" Foreground="Red" HorizontalAlignment="Center" Margin="133,190,228,198" x:Name="content" Text="2 ? 2 = 4" TextAlignment="Center" TextWrapping="Wrap" Width="439" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="80" FontWeight="SemiBold" Foreground="Red" HorizontalAlignment="Center" Margin="149,335,570,74" x:Name="plus" Text="+" TextAlignment="Center" TextWrapping="Wrap" Width="81" Tap="operator_Tap" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="80" FontWeight="SemiBold" Foreground="Red" HorizontalAlignment="Center" Margin="274,319,446,74" x:Name="mult" Text="x" TextAlignment="Center" TextWrapping="Wrap" Width="80" Tap="operator_Tap" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="80" FontWeight="SemiBold" Foreground="Red" HorizontalAlignment="Center" Margin="397,335,322,74" x:Name="divide" Text="/" TextAlignment="Center" TextWrapping="Wrap" Width="81" Tap="operator_Tap" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="80" FontWeight="SemiBold" Foreground="Red" HorizontalAlignment="Center" Margin="510,335,209,74" x:Name="minus" Text="-" TextAlignment="Center" TextWrapping="Wrap" Width="81" Tap="operator_Tap" />
+    </Grid>
+
+    <!--LayoutRoot è la griglia radice in cui viene inserito tutto il contenuto della pagina-->
+
+</phone:PhoneApplicationPage>

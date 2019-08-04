@@ -1,0 +1,38 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Smart_Challenge.lvlSet1.s1lvl22"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape" Orientation="Landscape"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False" Loaded="PhoneApplicationPage_Loaded">
+    <Grid Height="480" x:Name="grid1" Width="800">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="24*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
+        <Image Height="480" HorizontalAlignment="Left" x:Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="800" Source="/Smart Challenge;component/Images/bgLvl.jpg" Grid.ColumnSpan="3" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="32" FontWeight="SemiBold" Foreground="#FF006CFF" HorizontalAlignment="Center" Margin="133,22,115,398" x:Name="Instr" Text="" TextAlignment="Center" TextWrapping="Wrap" Width="552" Grid.ColumnSpan="3" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" x:Name="operation" HorizontalAlignment="Center" Height="105" Margin="148,188,147,187" TextWrapping="Wrap" VerticalAlignment="Center" Width="505" Grid.ColumnSpan="3" Foreground="#FF0023FF" FontWeight="Bold" FontSize="48"/>
+        <Button x:Name="correct" Content=" 18" HorizontalAlignment="Left" Margin="70,0,0,30" VerticalAlignment="Bottom" Height="103" Width="225" BorderBrush="{x:Null}" FontSize="36" Foreground="White" FontFamily="TextFont.ttf#TextFont" FontWeight="Bold" Tap="correct_Tap">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="/Images/imgLvl1/btn_12.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="wrong" Content="53" HorizontalAlignment="Right" Margin="0,0,70,30" VerticalAlignment="Bottom" Height="105" Width="225" BorderBrush="{x:Null}" FontSize="36" Foreground="White" FontFamily="TextFont.ttf#TextFont" FontWeight="Bold" Tap="correct_Tap" Grid.ColumnSpan="3">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="/Images/imgLvl1/btn_12.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+
+    <!--LayoutRoot è la griglia radice in cui viene inserito tutto il contenuto della pagina-->
+
+</phone:PhoneApplicationPage>

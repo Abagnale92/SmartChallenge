@@ -1,0 +1,61 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Smart_Challenge.s5lvl16"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape" Orientation="Landscape"
+    mc:Ignorable="d" d:DesignHeight="480" d:DesignWidth="800"
+    shell:SystemTray.IsVisible="False" Loaded="PhoneApplicationPage_Loaded">
+    <Grid Height="480" x:Name="grid1" Width="800">
+        <Image Height="480" HorizontalAlignment="Left" x:Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="800" Source="/Smart Challenge;component/Images/bgLvl.jpg" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="32" FontWeight="SemiBold" Foreground="#FF006CFF" HorizontalAlignment="Center" Margin="0,0,0,420" x:Name="Instr" Text="" TextAlignment="Center" TextWrapping="Wrap" Width="800" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="48" FontWeight="SemiBold" Foreground="Red" HorizontalAlignment="Center" Margin="551,167,26,265" x:Name="num" Text="0" TextAlignment="Center" TextWrapping="Wrap" Width="223" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="72" FontWeight="SemiBold" Foreground="Red" HorizontalAlignment="Center" Margin="530,242,183,166" x:Name="meno" Text="-" TextAlignment="Center" TextWrapping="Wrap" Width="87" Tap="meno_Tap" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="72" FontWeight="SemiBold" Foreground="Red" HorizontalAlignment="Center" Margin="712,244,10,166" x:Name="piu" Text="+" TextAlignment="Center" TextWrapping="Wrap" Width="78" Tap="piu_Tap" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="48" FontWeight="SemiBold" Foreground="Red" HorizontalAlignment="Center" Margin="605,348,83,60" x:Name="ok" Text="OK" TextAlignment="Center" TextWrapping="Wrap" Width="112" Tap="ok_Tap" />
+        <Image x:Name="o1" HorizontalAlignment="Left" Height="190" Margin="311,280,0,0" VerticalAlignment="Top" Width="118" Source="/Images/imgLvl2/orso.png"/>
+        <Image x:Name="o2" HorizontalAlignment="Left" Height="95" Margin="347,361,0,0" VerticalAlignment="Top" Width="82" Source="/Images/peng3.png"/>
+        <Image x:Name="o3" HorizontalAlignment="Left" Height="69.311" Margin="413.765,397.256,0,0" VerticalAlignment="Top" Width="76.209" Source="/Images/imgLvl4/chiocciola.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="0.794"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="o2_Copy" HorizontalAlignment="Left" Height="95" Margin="28,120,0,0" VerticalAlignment="Top" Width="82" Source="/Images/peng3.png"/>
+        <Image x:Name="o3_Copy" HorizontalAlignment="Left" Height="69.311" Margin="99.143,161.962,0,0" VerticalAlignment="Top" Width="76.209" Source="/Images/imgLvl4/chiocciola.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="0.794"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="o1_Copy" HorizontalAlignment="Left" Height="190" Margin="311,60,0,0" VerticalAlignment="Top" Width="118" Source="/Images/imgLvl2/orso.png"/>
+        <Image x:Name="o3_Copy1" HorizontalAlignment="Left" Height="69.311" Margin="384.185,168.685,0,0" VerticalAlignment="Top" Width="76.209" Source="/Images/imgLvl4/chiocciola.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="0.794"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="o2_Copy1" HorizontalAlignment="Left" Height="95" Margin="76,375,0,0" VerticalAlignment="Top" Width="82" Source="/Images/peng3.png"/>
+        <Image x:Name="o1_Copy1" HorizontalAlignment="Left" Height="190" Margin="10,290,0,0" VerticalAlignment="Top" Width="118" Source="/Images/imgLvl2/orso.png"/>
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="48" FontWeight="SemiBold" Foreground="Red" HorizontalAlignment="Center" Margin="128,100,518,323" x:Name="p1" Text="10 KG" TextAlignment="Center" TextWrapping="Wrap" Width="154" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="48" FontWeight="SemiBold" Foreground="Red" HorizontalAlignment="Center" Margin="434,100,204,323" x:Name="p1_Copy" Text="20 KG" TextAlignment="Center" TextWrapping="Wrap" Width="162" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="48" FontWeight="SemiBold" Foreground="Red" HorizontalAlignment="Center" Margin="128,323,518,105" x:Name="p1_Copy1" Text="24 KG" TextAlignment="Center" TextWrapping="Wrap" Width="154" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="48" FontWeight="SemiBold" Foreground="Red" HorizontalAlignment="Center" Margin="434,323,296,105" x:Name="p1_Copy2" Text="?" TextAlignment="Center" TextWrapping="Wrap" Width="70" />
+    </Grid>
+
+    <!--LayoutRoot è la griglia radice in cui viene inserito tutto il contenuto della pagina-->
+    <!--Codice di esempio che illustra l'utilizzo di ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Pulsante 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Pulsante 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="Voce di menu 1"/>
+                <shell:ApplicationBarMenuItem Text="Voce di menu 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+</phone:PhoneApplicationPage>

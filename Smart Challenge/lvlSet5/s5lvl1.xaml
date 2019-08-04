@@ -1,0 +1,92 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Smart_Challenge.s5lvl1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape" Orientation="Landscape"
+    mc:Ignorable="d" d:DesignHeight="480" d:DesignWidth="800"
+    shell:SystemTray.IsVisible="False" Loaded="PhoneApplicationPage_Loaded">
+
+    <!--LayoutRoot è la griglia radice in cui viene inserito tutto il contenuto della pagina-->
+    <!--Codice di esempio che illustra l'utilizzo di ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Pulsante 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Pulsante 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="Voce di menu 1"/>
+                <shell:ApplicationBarMenuItem Text="Voce di menu 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+    <Grid Height="480" Name="grid1" Width="800">
+        <Image Height="480" HorizontalAlignment="Left" x:Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="800" Source="/Smart%20Challenge;component/Images/bgLvl.jpg" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="32" FontWeight="SemiBold" Foreground="#FF006CFF" HorizontalAlignment="Center" Margin="10,23,10,397" x:Name="Instr" Text="" TextAlignment="Center" TextWrapping="Wrap" Width="780" />
+        <Image x:Name="l1" HorizontalAlignment="Left" Height="13" Margin="238.758,145.987,0,0" VerticalAlignment="Top" Width="185" Source="/Images/imgLvl5/linea.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Visibility="Collapsed">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="-38.268"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="l10" HorizontalAlignment="Left" Height="15.258" Margin="255.713,231.032,0,0" VerticalAlignment="Top" Width="154.31" Source="/Images/imgLvl5/linea.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Visibility="Collapsed">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="20.328"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="l9" HorizontalAlignment="Left" Height="16.881" Margin="279.801,193.978,0,0" VerticalAlignment="Top" Width="252.712" Source="/Images/imgLvl5/linea.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Visibility="Collapsed">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="-90.806"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="l4" HorizontalAlignment="Left" Height="16.859" Margin="142.888,429.157,0,0" VerticalAlignment="Top" Width="241.438" Source="/Images/imgLvl5/linea.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Visibility="Collapsed">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="-0.112"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="l5" HorizontalAlignment="Left" Height="18.514" Margin="376.443,429.135,0,0" VerticalAlignment="Top" Width="246.275" Source="/Images/imgLvl5/linea.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Visibility="Collapsed">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="0.194"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="l2" HorizontalAlignment="Left" Height="16.855" Margin="39.801,324.461,0,0" VerticalAlignment="Top" Width="239.827" Source="/Images/imgLvl5/linea.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Visibility="Collapsed">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="-0.112"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="l7" HorizontalAlignment="Left" Height="20.074" Margin="466.651,322.851,0,0" VerticalAlignment="Top" Width="243.039" Source="/Images/imgLvl5/linea.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Visibility="Collapsed">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="-0.167"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="l8" HorizontalAlignment="Left" Height="21.65" Margin="279.81,326.09,0,0" VerticalAlignment="Top" Width="188.267" Source="/Images/imgLvl5/linea.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Visibility="Collapsed">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="-0.112"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="l3" HorizontalAlignment="Left" Height="13.599" Margin="12.649,383.381,0,0" VerticalAlignment="Top" Width="152.933" Source="/Images/imgLvl5/linea.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Visibility="Collapsed">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="45.977"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="l6" HorizontalAlignment="Left" Height="13.599" Margin="581.24,376.938,0,0" VerticalAlignment="Top" Width="152.933" Source="/Images/imgLvl5/linea.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Visibility="Collapsed">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="130.79"/>
+            </Image.RenderTransform>
+        </Image>
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="48" FontWeight="SemiBold" Foreground="#FF006CFF" HorizontalAlignment="Center" Margin="239,315,486,111" x:Name="p1" Text="1" TextAlignment="Center" TextWrapping="Wrap" Width="75" Tap="p1_Tap" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="48" FontWeight="SemiBold" Foreground="#FF006CFF" HorizontalAlignment="Center" Margin="10,315,715,111" x:Name="p2" Text="2" TextAlignment="Center" TextWrapping="Wrap" Width="75" Tap="p2_Tap" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="48" FontWeight="SemiBold" Foreground="#FF006CFF" HorizontalAlignment="Center" Margin="100,416,625,10" x:Name="p3" Text="3" TextAlignment="Center" TextWrapping="Wrap" Width="75" Tap="p3_Tap" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="48" FontWeight="SemiBold" Foreground="#FF006CFF" HorizontalAlignment="Center" Margin="584,416,141,10" x:Name="p4" Text="4" TextAlignment="Center" TextWrapping="Wrap" Width="75" Tap="p4_Tap" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="48" FontWeight="SemiBold" Foreground="#FF006CFF" HorizontalAlignment="Center" Margin="666,315,59,111" x:Name="p5" Text="5" TextAlignment="Center" TextWrapping="Wrap" Width="75" Tap="p5_Tap" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="48" FontWeight="SemiBold" Foreground="#FF006CFF" HorizontalAlignment="Center" Margin="436,315,289,111" x:Name="p6" Text="6" TextAlignment="Center" TextWrapping="Wrap" Width="75" Tap="p6_Tap" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="48" FontWeight="SemiBold" Foreground="#FF006CFF" HorizontalAlignment="Center" Margin="365,83,360,343" x:Name="p7" Text="7" TextAlignment="Center" TextWrapping="Wrap" Width="75" Tap="p7_Tap" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="48" FontWeight="SemiBold" Foreground="#FF006CFF" HorizontalAlignment="Center" Margin="226,182,499,244" x:Name="p8" Text="8" TextAlignment="Center" TextWrapping="Wrap" Width="75" RenderTransformOrigin="0.544,0.55" Tap="p8_Tap" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="48" FontWeight="SemiBold" Foreground="#FF006CFF" HorizontalAlignment="Center" Margin="365,233,360,193" x:Name="p9" Text="9" TextAlignment="Center" TextWrapping="Wrap" Width="75" Tap="p9_Tap" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="72" FontWeight="SemiBold" Foreground="#FF006CFF" HorizontalAlignment="Center" Margin="469,194,196,221" x:Name="ok" Text="OK" TextAlignment="Center" TextWrapping="Wrap" Width="135" Tap="ok_Tap" Visibility="Collapsed" />
+    </Grid>
+</phone:PhoneApplicationPage>

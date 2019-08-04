@@ -1,0 +1,54 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:el="clr-namespace:Microsoft.Expression.Interactivity.Layout;assembly=Microsoft.Expression.Interactions" 
+    x:Class="Smart_Challenge.s4lvl23"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape" Orientation="Landscape"
+    mc:Ignorable="d" d:DesignHeight="480" d:DesignWidth="800"
+    shell:SystemTray.IsVisible="False" Loaded="PhoneApplicationPage_Loaded">
+
+    <Grid Height="480" x:Name="grid1" Width="800">
+        <Image Height="480" HorizontalAlignment="Left" x:Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="800" Source="/Smart Challenge;component/Images/bgLvl.jpg" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="32" FontWeight="SemiBold" Foreground="#FF006CFF" HorizontalAlignment="Center" Margin="0,22,10,398" x:Name="Instr" Text="" TextAlignment="Center" TextWrapping="Wrap" Width="790" />
+        <Image HorizontalAlignment="Left" Height="622" Margin="-94,128,-173,-270" VerticalAlignment="Top" Width="1067" Source="/Images/imgLvl3/albero2.png"/>
+        <Image x:Name="c1" HorizontalAlignment="Left" Height="49.671" Margin="229.542,438.993,0,-8.664" VerticalAlignment="Top" Width="49.495" Source="/Images/imgLvl4/chiocciola.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Tap="c1_Tap">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="-0.665" ScaleX="-1"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="92" Margin="-16,402,0,-14" VerticalAlignment="Top" Width="119" Source="/Images/imgLvl3/erba.png"/>
+        <Image HorizontalAlignment="Left" Height="121" Margin="493,388,0,-29" VerticalAlignment="Top" Width="130" Source="/Images/imgLvl3/erba.png"/>
+        <Image HorizontalAlignment="Left" Height="107" Margin="573,402,0,-29" VerticalAlignment="Top" Width="125" Source="/Images/imgLvl3/erba.png"/>
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="72" FontWeight="SemiBold" Foreground="#FF006CFF" HorizontalAlignment="Center" Margin="703,403,10,0" x:Name="c2" Text="@" TextAlignment="Center" TextWrapping="Wrap" Width="87" Tap="c2_Tap" />
+        <Grid HorizontalAlignment="Left" Height="121" Margin="219,373,0,-14" VerticalAlignment="Top" Width="118">
+            <i:Interaction.Behaviors>
+                <el:MouseDragElementBehavior ConstrainToParentBounds="True"/>
+            </i:Interaction.Behaviors>
+            <Image HorizontalAlignment="Left" Height="95.034" VerticalAlignment="Top" Width="106.572" Source="/Images/imgLvl3/erba.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="-0.036,25.983,0,-0.017">
+                <Image.RenderTransform>
+                    <CompositeTransform Rotation="-1.352"/>
+                </Image.RenderTransform>
+            </Image>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="121" Margin="672,373,0,-14" VerticalAlignment="Top" Width="118">
+            <i:Interaction.Behaviors>
+                <el:MouseDragElementBehavior ConstrainToParentBounds="True"/>
+            </i:Interaction.Behaviors>
+            <Image HorizontalAlignment="Left" Height="108.318" VerticalAlignment="Top" Width="115.888" Source="/Images/imgLvl3/erba.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="1.306,17.091,0,-4.409">
+                <Image.RenderTransform>
+                    <CompositeTransform Rotation="-1.352"/>
+                </Image.RenderTransform>
+            </Image>
+        </Grid>
+    </Grid>
+
+    <!--LayoutRoot è la griglia radice in cui viene inserito tutto il contenuto della pagina-->
+    <!--Codice di esempio che illustra l'utilizzo di ApplicationBar-->
+</phone:PhoneApplicationPage>

@@ -1,0 +1,68 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Smart_Challenge.lvlSet1.s1lvl19"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape" Orientation="Landscape"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+    <Grid x:Name="grid1" HorizontalAlignment="Left" Height="480" VerticalAlignment="Top" Width="800" Margin="0,0,-72,0" Loaded="grid1_Loaded">
+        <Image x:Name="image1" HorizontalAlignment="Center" Height="480" VerticalAlignment="Center" Width="800" Source="/Smart Challenge;component/Images/bgLvl.jpg"/>
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="32" FontWeight="SemiBold" Foreground="#FF006CFF" HorizontalAlignment="Center" Margin="10,22,10,367" x:Name="Instr" Text="" TextAlignment="Center" TextWrapping="Wrap" Width="780" />
+        <Image x:Name="f1" HorizontalAlignment="Left" Height="63.273" Margin="195,156.727,0,0" VerticalAlignment="Top" Width="139.214" Source="/Images/imgLvl1/fArancione.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Tap="f_Tap">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="-270.285"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="f2" HorizontalAlignment="Left" Height="20.586" Margin="713.163,169.414,0,0" VerticalAlignment="Top" Width="56.837" Source="/Images/imgLvl1/fBlu.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Tap="f_Tap">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="-91.083"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="f3" HorizontalAlignment="Left" Height="35.264" Margin="335.414,185,0,0" VerticalAlignment="Top" Width="79.586" Source="/Images/imgLvl1/fGialla.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Tap="f_Tap">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="88.857"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="f4" HorizontalAlignment="Left" Height="95.096" Margin="284.984,269.904,0,0" VerticalAlignment="Top" Width="215.016" Source="/Images/imgLvl1/fRosa.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Tap="f_Tap">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="-0.184"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="f5" HorizontalAlignment="Left" Height="60" Margin="310,400,0,0" VerticalAlignment="Top" Width="95" Source="/Images/imgLvl1/fRossa.png" Tap="f_Tap"/>
+        <Image x:Name="f6" HorizontalAlignment="Left" Height="45" Margin="145,380,0,0" VerticalAlignment="Top" Width="100" Source="/Images/imgLvl1/fVerde.png" RenderTransformOrigin="0.15,0.438" UseLayoutRounding="False" d:LayoutRounding="Auto" Tap="f_Tap">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="-180.505" TranslateX="70.022" TranslateY="5.272"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="f7" HorizontalAlignment="Left" Height="89.868" Margin="34.906,210,0,0" VerticalAlignment="Top" Width="205.094" Source="/Images/imgLvl1/fViola.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Tap="f_Tap">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="-90.072"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="f8" HorizontalAlignment="Left" Height="95.491" Margin="529.726,354.607,0,0" VerticalAlignment="Top" Width="225.609" Source="/Images/imgLvl1/fArancione.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Tap="f_Tap">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="179.639"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="f9" HorizontalAlignment="Left" Height="111.024" Margin="534.396,173.976,0,0" VerticalAlignment="Top" Width="210.604" Source="/Images/imgLvl1/fViola.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Tap="f_Tap">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="90.412"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="f10" HorizontalAlignment="Left" Height="74.793" Margin="440.475,145,0,0" VerticalAlignment="Top" Width="144.525" Source="/Images/imgLvl1/fVerde.png" RenderTransformOrigin="0.722,0.447" UseLayoutRounding="False" d:LayoutRounding="Auto" Tap="f_Tap">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="-90.441" TranslateX="-27.962" TranslateY="-22.973"/>
+            </Image.RenderTransform>
+        </Image>
+    </Grid>
+
+    <!--LayoutRoot è la griglia radice in cui viene inserito tutto il contenuto della pagina-->
+
+</phone:PhoneApplicationPage>

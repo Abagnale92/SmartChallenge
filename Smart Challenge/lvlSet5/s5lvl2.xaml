@@ -1,0 +1,115 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Smart_Challenge.s5lvl2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape" Orientation="Landscape"
+    mc:Ignorable="d" d:DesignHeight="480" d:DesignWidth="800"
+    shell:SystemTray.IsVisible="False" Loaded="PhoneApplicationPage_Loaded">
+    <Grid Height="480" x:Name="grid1" Width="800">
+        <Image Height="480" HorizontalAlignment="Left" x:Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="800" Source="/Smart Challenge;component/Images/bgLvl.jpg" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="32" FontWeight="SemiBold" Foreground="#FF006CFF" HorizontalAlignment="Center" Margin="10,10,72,406" x:Name="Instr" Text="" TextAlignment="Center" TextWrapping="Wrap" Width="718" />
+        <TextBlock x:Name="h" HorizontalAlignment="Left" Height="65" Margin="716.01,36.492,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Foreground="Red" FontFamily="TextFont.ttf#TextFont" Text="H" FontSize="72" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Tap="letter_Tap">
+            <TextBlock.RenderTransform>
+                <CompositeTransform Rotation="0.041"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="d" HorizontalAlignment="Left" Height="65" Margin="549.32,215.224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Foreground="Red" FontFamily="TextFont.ttf#TextFont" Text="D" FontSize="72" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Tap="letter_Tap">
+            <TextBlock.RenderTransform>
+                <CompositeTransform Rotation="0.041"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="r" HorizontalAlignment="Left" Height="65" Margin="626.651,221.061,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Foreground="Red" FontFamily="TextFont.ttf#TextFont" Text="R" FontSize="72" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Tap="letter_Tap">
+            <TextBlock.RenderTransform>
+                <CompositeTransform Rotation="0.041"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="k" HorizontalAlignment="Left" Height="65" Margin="629.688,309.114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Foreground="Red" FontFamily="TextFont.ttf#TextFont" Text="K" FontSize="72" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Tap="letter_Tap">
+            <TextBlock.RenderTransform>
+                <CompositeTransform Rotation="0.041"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="y" HorizontalAlignment="Left" Height="65" Margin="625.328,39.794,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Foreground="Red" FontFamily="TextFont.ttf#TextFont" Text="Y" FontSize="72" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Tap="letter_Tap">
+            <TextBlock.RenderTransform>
+                <CompositeTransform Rotation="0.041"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="n" HorizontalAlignment="Left" Height="65" Margin="716.295,222.691,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Foreground="Red" FontFamily="TextFont.ttf#TextFont" Text="N" FontSize="72" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Tap="letter_Tap">
+            <TextBlock.RenderTransform>
+                <CompositeTransform Rotation="0.041"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="p" HorizontalAlignment="Left" Height="65" Margin="716.195,119.794,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Foreground="#FFF93A3A" FontFamily="TextFont.ttf#TextFont" Text="P" FontSize="72" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Tap="letter_Tap">
+            <TextBlock.RenderTransform>
+                <CompositeTransform Rotation="0.041"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="f" HorizontalAlignment="Left" Height="66.398" Margin="542.219,41.469,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Foreground="Red" FontFamily="TextFont.ttf#TextFont" Text="F" FontSize="72" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Tap="letter_Tap">
+            <TextBlock.RenderTransform>
+                <CompositeTransform Rotation="0.041"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="o" HorizontalAlignment="Left" Height="65" Margin="543.839,397.99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Foreground="Red" FontFamily="TextFont.ttf#TextFont" Text="O" FontSize="72" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Tap="letter_Tap">
+            <TextBlock.RenderTransform>
+                <CompositeTransform Rotation="0.041"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="u" HorizontalAlignment="Left" Height="65" Margin="545.109,308.984,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Foreground="Red" FontFamily="TextFont.ttf#TextFont" Text="U" FontSize="72" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Tap="letter_Tap">
+            <TextBlock.RenderTransform>
+                <CompositeTransform Rotation="0.041"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="w" HorizontalAlignment="Left" Height="65" Margin="537.782,126.175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Foreground="Red" FontFamily="TextFont.ttf#TextFont" Text="W" FontSize="72" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Tap="letter_Tap">
+            <TextBlock.RenderTransform>
+                <CompositeTransform Rotation="0.041"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="j" HorizontalAlignment="Left" Height="75.77" Margin="629.325,394.179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Foreground="Red" FontFamily="TextFont.ttf#TextFont" Text="J" FontSize="72" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Tap="letter_Tap">
+            <TextBlock.RenderTransform>
+                <CompositeTransform Rotation="0.041"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="e" HorizontalAlignment="Left" Height="65" Margin="723.988,401.917,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Foreground="Red" FontFamily="TextFont.ttf#TextFont" Text="E" FontSize="72" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Tap="letter_Tap">
+            <TextBlock.RenderTransform>
+                <CompositeTransform Rotation="0.041"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="g" HorizontalAlignment="Left" Height="65" Margin="626.051,122.241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Foreground="Red" FontFamily="TextFont.ttf#TextFont" Text="G" FontSize="72" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Tap="letter_Tap">
+            <TextBlock.RenderTransform>
+                <CompositeTransform Rotation="0.041"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="a" HorizontalAlignment="Left" Height="65" Margin="723.973,311.069,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Foreground="Red" FontFamily="TextFont.ttf#TextFont" Text="A" FontSize="72" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Tap="letter_Tap">
+            <TextBlock.RenderTransform>
+                <CompositeTransform Rotation="0.041"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="text" HorizontalAlignment="Center" Height="69" Margin="10,411,290,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="500" Foreground="Red" FontFamily="TextFont.ttf#TextFont" FontSize="36"/>
+        <Button x:Name="but" Content="OK" HorizontalAlignment="Left" Margin="392,307,0,0" VerticalAlignment="Top" Foreground="White" BorderBrush="{x:Null}" Height="104" Width="128" FontFamily="TextFont.ttf#TextFont" Tap="but_Click">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="/Images/imgLvl1/btn_12.png"/>
+            </Button.Background>
+        </Button>
+        <Image x:Name="foto1" HorizontalAlignment="Left" Height="303" Margin="76,86,0,0" VerticalAlignment="Top" Width="208" Source="/Images/imgLvl5/modificata.jpg"/>
+        <Image x:Name="foto2" HorizontalAlignment="Left" Height="303" Margin="76,86,0,0" VerticalAlignment="Top" Width="208" Source="/Images/imgLvl5/originale.jpg" Visibility="Collapsed"/>
+    </Grid>
+
+    <!--LayoutRoot è la griglia radice in cui viene inserito tutto il contenuto della pagina-->
+    <!--Codice di esempio che illustra l'utilizzo di ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Pulsante 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Pulsante 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="Voce di menu 1"/>
+                <shell:ApplicationBarMenuItem Text="Voce di menu 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+</phone:PhoneApplicationPage>

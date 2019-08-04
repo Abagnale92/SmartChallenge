@@ -1,0 +1,36 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Smart_Challenge.s6lvl20"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape" Orientation="Landscape"
+    mc:Ignorable="d" d:DesignHeight="480" d:DesignWidth="800"
+    shell:SystemTray.IsVisible="False" Loaded="PhoneApplicationPage_Loaded">
+    <Grid Height="480" x:Name="grid1" Width="800">
+        <Image Height="480" HorizontalAlignment="Left" x:Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="800" Source="/Smart Challenge;component/Images/bgLvl.jpg" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="32" FontWeight="SemiBold" Foreground="#FF006CFF" HorizontalAlignment="Center" Margin="0,10,0,319" x:Name="Instr" Text="" TextAlignment="Center" TextWrapping="Wrap" Width="800" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="100" FontWeight="SemiBold" Foreground="Red" HorizontalAlignment="Center" Margin="316,192,321,173" x:Name="num" Text="0" TextAlignment="Center" TextWrapping="Wrap" Width="163" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="100" FontWeight="SemiBold" Foreground="Red" HorizontalAlignment="Center" Margin="124,223,513,142" x:Name="meno" Text="-" TextAlignment="Center" TextWrapping="Wrap" Width="163" Tap="meno_Tap" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="100" FontWeight="SemiBold" Foreground="Red" HorizontalAlignment="Center" Margin="526,223,111,142" x:Name="piu" Text="+" TextAlignment="Center" TextWrapping="Wrap" Width="163" Tap="piu_Tap" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="100" FontWeight="SemiBold" Foreground="Red" HorizontalAlignment="Center" Margin="202,377,219,10" x:Name="ok" Text="OK" TextAlignment="Center" TextWrapping="Wrap" Width="379" Tap="ok_Tap" />
+    </Grid>
+
+    <!--LayoutRoot è la griglia radice in cui viene inserito tutto il contenuto della pagina-->
+    <!--Codice di esempio che illustra l'utilizzo di ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Pulsante 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Pulsante 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="Voce di menu 1"/>
+                <shell:ApplicationBarMenuItem Text="Voce di menu 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+</phone:PhoneApplicationPage>

@@ -1,0 +1,45 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Ad="clr-namespace:Inneractive.Ad;assembly=Inneractive.Ad" 
+    xmlns:UI="clr-namespace:Microsoft.Advertising.Mobile.UI;assembly=Microsoft.Advertising.Mobile.UI" 
+    x:Class="Smart_Challenge.end"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape" Orientation="Landscape"
+    mc:Ignorable="d" d:DesignHeight="480" d:DesignWidth="800"
+    shell:SystemTray.IsVisible="False" Loaded="PhoneApplicationPage_Loaded">
+
+    <!--LayoutRoot è la griglia radice in cui viene inserito tutto il contenuto della pagina-->
+    <!--Codice di esempio che illustra l'utilizzo di ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Pulsante 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Pulsante 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="Voce di menu 1"/>
+                <shell:ApplicationBarMenuItem Text="Voce di menu 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+    <Grid Height="480" x:Name="grid1" Width="800">
+        <Image Height="480" HorizontalAlignment="Left" x:Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="800" Source="/Images/endBg.jpg" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="72" FontWeight="Bold" Foreground="#FF006CFF" HorizontalAlignment="Center" Margin="277,75,264,323" x:Name="Instr" Text="Time" TextAlignment="Center" TextWrapping="Wrap" Width="259" />
+        <Image x:Name="star1" HorizontalAlignment="Left" Height="121" Margin="168,300,0,0" VerticalAlignment="Top" Width="121" Source="/Images/stellaEmp.png"/>
+        <Image x:Name="star2" HorizontalAlignment="Left" Height="121" Margin="354,349,0,0" VerticalAlignment="Top" Width="121" Source="/Images/stellaEmp.png"/>
+        <Image x:Name="star3" HorizontalAlignment="Left" Height="121" Margin="537,300,0,0" VerticalAlignment="Top" Width="121" Source="/Images/stellaEmp.png"/>
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="72" FontWeight="Bold" Foreground="#FF006CFF" HorizontalAlignment="Center" Margin="277,191,142,207" x:Name="time" TextAlignment="Center" TextWrapping="Wrap" Width="381" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="72" FontWeight="Bold" Foreground="#FF006CFF" HorizontalAlignment="Center" Margin="663,398,0,0" x:Name="OK" Text="OK!" TextAlignment="Center" TextWrapping="Wrap" Width="137" RenderTransformOrigin="0.521,2.549" Tap="OK_Tap" />
+        <Grid x:Name="griglia" HorizontalAlignment="Left" Height="100" Margin="-278.09,188.433,0,0" VerticalAlignment="Top" Width="621" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Grid.RenderTransform>
+                <CompositeTransform Rotation="-89.608"/>
+            </Grid.RenderTransform>
+            <UI:AdControl x:Name="firstAd" Width="480" Height="80" AdUnitId="10294583" ApplicationId="e1a80477-0312-4bf3-8ab7-7344fdd5c9e3" Margin="69,20,72,0" />
+        </Grid>
+    </Grid>
+</phone:PhoneApplicationPage>

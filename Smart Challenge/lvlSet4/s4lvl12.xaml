@@ -1,0 +1,56 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Smart_Challenge.s4lvl12"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape" Orientation="Landscape"
+    mc:Ignorable="d" d:DesignHeight="480" d:DesignWidth="800"
+    shell:SystemTray.IsVisible="False" Loaded="PhoneApplicationPage_Loaded">
+    <Grid Height="480" x:Name="grid1" Width="800">
+        <Image Height="480" HorizontalAlignment="Left" x:Name="background" Stretch="Fill" VerticalAlignment="Top" Width="800" Source="/Smart Challenge;component/Images/bgLvl.jpg" />
+        <TextBlock Height="59" HorizontalAlignment="Left" Margin="547,411,0,0" x:Name="Txt0" Text="OK" VerticalAlignment="Top" Width="75" FontSize="48" FontFamily="TextFont.ttf#TextFont" Foreground="#FF003D86" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" Height="48" HorizontalAlignment="Left" Margin="10,12,0,0" x:Name="Instr" Text="" VerticalAlignment="Top" Width="780" FontSize="32" Foreground="#FF006CFF" TextAlignment="Center" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="48" Height="59" HorizontalAlignment="Left" Margin="476,328,0,0" x:Name="Txt1" Text="1" VerticalAlignment="Top" Width="45" Foreground="#FF003D86" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="48" Height="59" HorizontalAlignment="Left" Margin="563,328,0,0" x:Name="textBlock1" Text="2" VerticalAlignment="Top" Width="45" Foreground="#FF003D86" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="48" Height="59" HorizontalAlignment="Left" Margin="650,334,0,0" x:Name="textBlock2" Text="3" VerticalAlignment="Top" Width="45" Foreground="#FF003D86" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="48" Height="59" HorizontalAlignment="Left" Margin="476,252,0,0" x:Name="textBlock4" Text="4" VerticalAlignment="Top" Width="45" Foreground="#FF003D86" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="48" Height="59" HorizontalAlignment="Left" Margin="563,248,0,0" x:Name="textBlock5" Text="5" VerticalAlignment="Top" Width="45" Foreground="#FF003D86" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="48" Height="59" HorizontalAlignment="Left" Margin="650,248,0,0" x:Name="textBlock6" Text="6" VerticalAlignment="Top" Width="45" Foreground="#FF003D86" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="48" Height="59" HorizontalAlignment="Left" Margin="476,160,0,0" x:Name="textBlock8" Text="7" VerticalAlignment="Top" Width="45" Foreground="#FF003D86" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="48" Height="59" HorizontalAlignment="Left" Margin="563,167,0,0" x:Name="textBlock9" Text="8" VerticalAlignment="Top" Width="45" Foreground="#FF003D86" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="48" Height="59" HorizontalAlignment="Left" Margin="650,167,0,0" x:Name="textBlock10" Text="9" VerticalAlignment="Top" Width="45" Foreground="#FF003D86" />
+        <Image Height="77" HorizontalAlignment="Left" Margin="453,143,0,0" x:Name="_7" Stretch="Fill" VerticalAlignment="Top" Width="82" Source="/Smart Challenge;component/Images/imgLvl1/clickBt.png" Tap="numPad" />
+        <Image Height="77" HorizontalAlignment="Left" Margin="540,148,0,0" x:Name="_8" Source="/Smart Challenge;component/Images/imgLvl1/clickBt.png" Stretch="Fill" VerticalAlignment="Top" Width="82" Tap="numPad" />
+        <Image Height="77" HorizontalAlignment="Left" Margin="627,148,0,0" x:Name="_9" Source="/Smart Challenge;component/Images/imgLvl1/clickBt.png" Stretch="Fill" VerticalAlignment="Top" Width="76" Tap="numPad" />
+        <Image Height="77" HorizontalAlignment="Left" Margin="627,231,0,0" x:Name="_6" Source="/Smart Challenge;component/Images/imgLvl1/clickBt.png" Stretch="Fill" VerticalAlignment="Top" Width="76" Tap="numPad" />
+        <Image Height="77" HorizontalAlignment="Left" Margin="540,231,0,0" x:Name="_5" Source="/Smart Challenge;component/Images/imgLvl1/clickBt.png" Stretch="Fill" VerticalAlignment="Top" Width="82" Tap="numPad" />
+        <Image Height="77" HorizontalAlignment="Left" Margin="451,230,0,0" x:Name="_4" Source="/Smart Challenge;component/Images/imgLvl1/clickBt.png" Stretch="Fill" VerticalAlignment="Top" Width="82" Tap="numPad" />
+        <Image Height="77" HorizontalAlignment="Left" Margin="453,316,0,0" x:Name="_1" Source="/Smart Challenge;component/Images/imgLvl1/clickBt.png" Stretch="Fill" VerticalAlignment="Top" Width="82" Tap="numPad" />
+        <Image Height="77" HorizontalAlignment="Left" Margin="540,316,0,0" x:Name="_2" Source="/Smart Challenge;component/Images/imgLvl1/clickBt.png" Stretch="Fill" VerticalAlignment="Top" Width="82" Tap="numPad" />
+        <Image Height="77" HorizontalAlignment="Left" Margin="627,316,0,0" x:Name="_3" Source="/Smart Challenge;component/Images/imgLvl1/clickBt.png" Stretch="Fill" VerticalAlignment="Top" Width="82" Tap="numPad" />
+        <Image Height="77" HorizontalAlignment="Left" Margin="453,398,0,0" x:Name="numPad0" Source="/Smart Challenge;component/Images/imgLvl1/clickBt.png" Stretch="Fill" VerticalAlignment="Top" Width="258" Tap="numPad0_Tap" />
+        <Image Height="77" HorizontalAlignment="Left" Margin="453,65,0,0" x:Name="result" Source="/Smart Challenge;component/Images/imgLvl1/clickBt.png" Stretch="Fill" VerticalAlignment="Top" Width="252" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" Height="77" HorizontalAlignment="Left" Margin="453,83,0,0" x:Name="calc1" Text="" VerticalAlignment="Top" Width="228" Foreground="Black" FontSize="48" TextAlignment="Right" RenderTransformOrigin="0.44,0.356" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="48" Foreground="Black" Height="77" HorizontalAlignment="Left" Margin="246,83,0,0" x:Name="calc2" Text="" TextAlignment="Right" VerticalAlignment="Top" Width="292" Visibility="Collapsed" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" Height="322" HorizontalAlignment="Left" Margin="90,83,0,0" x:Name="quiz" VerticalAlignment="Top" Width="257" FontSize="32" Foreground="#FF006CFF" TextAlignment="Center" />
+    </Grid>
+
+    <!--LayoutRoot è la griglia radice in cui viene inserito tutto il contenuto della pagina-->
+    <!--Codice di esempio che illustra l'utilizzo di ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Pulsante 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Pulsante 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="Voce di menu 1"/>
+                <shell:ApplicationBarMenuItem Text="Voce di menu 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+</phone:PhoneApplicationPage>

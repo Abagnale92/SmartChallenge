@@ -1,0 +1,1967 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E6AC161F-FFBF-4CB2-80AB-8A109A0FE76E}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Smart_Challenge</RootNamespace>
+    <AssemblyName>Smart Challenge</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>it-IT;en-US;en-GB</SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>Smart_Challenge.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>Smart_Challenge.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.30816.0</ExpressionBlendVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Inneractive.Ad">
+      <HintPath>..\..\..\..\Desktop\Smart Challenge 2.0.0.1 X 7.8\Smart Challenge\Bin\Debug\Inneractive.Ad.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Advertising.Mobile, Version=6.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Advertising.Mobile.UI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Expression.Interactions, Version=3.8.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b772ad94eb9ca604, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Desktop\Smart Challenge 2.0.0.1 X 7.8\Smart Challenge\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="Microsoft.Xna.Framework" />
+    <Reference Include="Phone.Controls">
+      <HintPath>..\..\..\..\Desktop\Smart Challenge 2.0.0.1 X 7.8\Smart Challenge\Bin\Debug\Phone.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="ShakeGestures">
+      <HintPath>..\..\..\..\Desktop\Smart Challenge 2.0.0.1 X 7.8\Smart Challenge\Bin\Debug\ShakeGestures.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Interactivity, Version=3.8.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="mscorlib.extensions" />
+    <Reference Include="ToggleSwitch">
+      <HintPath>..\..\..\..\Desktop\Smart Challenge 2.0.0.1 X 7.8\Smart Challenge\Bin\Debug\ToggleSwitch.dll</HintPath>
+    </Reference>
+    <Reference Include="Tomers.Phone.Controls">
+      <HintPath>..\..\..\..\Desktop\Smart Challenge 2.0.0.1 X 7.8\Smart Challenge\Bin\Debug\Tomers.Phone.Controls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet8\s8lvl3.xaml.cs">
+      <DependentUpon>s8lvl3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet8\s8lvl2.xaml.cs">
+      <DependentUpon>s8lvl2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet8\s8lvl1.xaml.cs">
+      <DependentUpon>s8lvl1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet8\s8lvl7.xaml.cs">
+      <DependentUpon>s8lvl7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet9\s9lvl2.xaml.cs">
+      <DependentUpon>s9lvl2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet9\s9lvl1.xaml.cs">
+      <DependentUpon>s9lvl1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet9\s9lvl10.xaml.cs">
+      <DependentUpon>s9lvl10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet9\s9lvl11.xaml.cs">
+      <DependentUpon>s9lvl11.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet9\s9lvl12.xaml.cs">
+      <DependentUpon>s9lvl12.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet9\s9lvl13.xaml.cs">
+      <DependentUpon>s9lvl13.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet9\s9lvl14.xaml.cs">
+      <DependentUpon>s9lvl14.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet9\s9lvl15.xaml.cs">
+      <DependentUpon>s9lvl15.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet9\s9lvl16.xaml.cs">
+      <DependentUpon>s9lvl16.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet9\s9lvl17.xaml.cs">
+      <DependentUpon>s9lvl17.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet9\s9lvl18.xaml.cs">
+      <DependentUpon>s9lvl18.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet9\s9lvl19.xaml.cs">
+      <DependentUpon>s9lvl19.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet9\s9lvl20.xaml.cs">
+      <DependentUpon>s9lvl20.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet9\s9lvl3.xaml.cs">
+      <DependentUpon>s9lvl3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet9\s9lvl4.xaml.cs">
+      <DependentUpon>s9lvl4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet9\s9lvl5.xaml.cs">
+      <DependentUpon>s9lvl5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet9\s9lvl6.xaml.cs">
+      <DependentUpon>s9lvl6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet9\s9lvl7.xaml.cs">
+      <DependentUpon>s9lvl7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet9\s9lvl8.xaml.cs">
+      <DependentUpon>s9lvl8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet9\s9lvl9.xaml.cs">
+      <DependentUpon>s9lvl9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet8\s8lvl10.xaml.cs">
+      <DependentUpon>s8lvl10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet8\s8lvl11.xaml.cs">
+      <DependentUpon>s8lvl11.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet8\s8lvl12.xaml.cs">
+      <DependentUpon>s8lvl12.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet8\s8lvl13.xaml.cs">
+      <DependentUpon>s8lvl13.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet8\s8lvl14.xaml.cs">
+      <DependentUpon>s8lvl14.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet8\s8lvl15.xaml.cs">
+      <DependentUpon>s8lvl15.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet8\s8lvl16.xaml.cs">
+      <DependentUpon>s8lvl16.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet8\s8lvl17.xaml.cs">
+      <DependentUpon>s8lvl17.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet8\s8lvl18.xaml.cs">
+      <DependentUpon>s8lvl18.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet8\s8lvl19.xaml.cs">
+      <DependentUpon>s8lvl19.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet8\s8lvl20.xaml.cs">
+      <DependentUpon>s8lvl20.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet8\s8lvl4.xaml.cs">
+      <DependentUpon>s8lvl4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet8\s8lvl5.xaml.cs">
+      <DependentUpon>s8lvl5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet8\s8lvl6.xaml.cs">
+      <DependentUpon>s8lvl6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet8\s8lvl8.xaml.cs">
+      <DependentUpon>s8lvl8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet8\s8lvl9.xaml.cs">
+      <DependentUpon>s8lvl9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet7\s7lvl3.xaml.cs">
+      <DependentUpon>s7lvl3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet7\s7lvl20.xaml.cs">
+      <DependentUpon>s7lvl20.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet7\s7lvl19.xaml.cs">
+      <DependentUpon>s7lvl19.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet7\s7lvl18.xaml.cs">
+      <DependentUpon>s7lvl18.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet7\s7lvl17.xaml.cs">
+      <DependentUpon>s7lvl17.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet7\s7lvl16.xaml.cs">
+      <DependentUpon>s7lvl16.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet7\s7lvl15.xaml.cs">
+      <DependentUpon>s7lvl15.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet7\s7lvl14.xaml.cs">
+      <DependentUpon>s7lvl14.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet7\s7lvl13.xaml.cs">
+      <DependentUpon>s7lvl13.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet7\s7lvl12.xaml.cs">
+      <DependentUpon>s7lvl12.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet7\s7lvl11.xaml.cs">
+      <DependentUpon>s7lvl11.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet7\s7lvl10.xaml.cs">
+      <DependentUpon>s7lvl10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet7\s7lvl9.xaml.cs">
+      <DependentUpon>s7lvl9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet7\s7lvl8.xaml.cs">
+      <DependentUpon>s7lvl8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet7\s7lvl7.xaml.cs">
+      <DependentUpon>s7lvl7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet7\s7lvl6.xaml.cs">
+      <DependentUpon>s7lvl6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet7\s7lvl5.xaml.cs">
+      <DependentUpon>s7lvl5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet7\s7lvl4.xaml.cs">
+      <DependentUpon>s7lvl4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet7\s7lvl2.xaml.cs">
+      <DependentUpon>s7lvl2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet7\s7lvl1.xaml.cs">
+      <DependentUpon>s7lvl1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UltimolvlMenu.xaml.cs">
+      <DependentUpon>UltimolvlMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet6\s6lvl1.xaml.cs">
+      <DependentUpon>s6lvl1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet6\s6lvl10.xaml.cs">
+      <DependentUpon>s6lvl10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet6\s6lvl11.xaml.cs">
+      <DependentUpon>s6lvl11.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet6\s6lvl12.xaml.cs">
+      <DependentUpon>s6lvl12.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet6\s6lvl13.xaml.cs">
+      <DependentUpon>s6lvl13.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet6\s6lvl14.xaml.cs">
+      <DependentUpon>s6lvl14.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet6\s6lvl15.xaml.cs">
+      <DependentUpon>s6lvl15.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet6\s6lvl16.xaml.cs">
+      <DependentUpon>s6lvl16.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet6\s6lvl17.xaml.cs">
+      <DependentUpon>s6lvl17.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet6\s6lvl18.xaml.cs">
+      <DependentUpon>s6lvl18.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet6\s6lvl19.xaml.cs">
+      <DependentUpon>s6lvl19.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet6\s6lvl2.xaml.cs">
+      <DependentUpon>s6lvl2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet6\s6lvl20.xaml.cs">
+      <DependentUpon>s6lvl20.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet6\s6lvl21.xaml.cs">
+      <DependentUpon>s6lvl21.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet6\s6lvl22.xaml.cs">
+      <DependentUpon>s6lvl22.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet6\s6lvl23.xaml.cs">
+      <DependentUpon>s6lvl23.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet6\s6lvl24.xaml.cs">
+      <DependentUpon>s6lvl24.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet6\s6lvl25.xaml.cs">
+      <DependentUpon>s6lvl25.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet6\s6lvl3.xaml.cs">
+      <DependentUpon>s6lvl3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet6\s6lvl4.xaml.cs">
+      <DependentUpon>s6lvl4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet6\s6lvl5.xaml.cs">
+      <DependentUpon>s6lvl5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet6\s6lvl6.xaml.cs">
+      <DependentUpon>s6lvl6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet6\s6lvl7.xaml.cs">
+      <DependentUpon>s6lvl7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet6\s6lvl8.xaml.cs">
+      <DependentUpon>s6lvl8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet6\s6lvl9.xaml.cs">
+      <DependentUpon>s6lvl9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet5\s5lvl1.xaml.cs">
+      <DependentUpon>s5lvl1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet5\s5lvl10.xaml.cs">
+      <DependentUpon>s5lvl10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet5\s5lvl11.xaml.cs">
+      <DependentUpon>s5lvl11.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet5\s5lvl12.xaml.cs">
+      <DependentUpon>s5lvl12.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet5\s5lvl13.xaml.cs">
+      <DependentUpon>s5lvl13.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet5\s5lvl14.xaml.cs">
+      <DependentUpon>s5lvl14.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet5\s5lvl15.xaml.cs">
+      <DependentUpon>s5lvl15.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet5\s5lvl16.xaml.cs">
+      <DependentUpon>s5lvl16.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet5\s5lvl17.xaml.cs">
+      <DependentUpon>s5lvl17.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet5\s5lvl18.xaml.cs">
+      <DependentUpon>s5lvl18.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet5\s5lvl19.xaml.cs">
+      <DependentUpon>s5lvl19.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet5\s5lvl2.xaml.cs">
+      <DependentUpon>s5lvl2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet5\s5lvl20.xaml.cs">
+      <DependentUpon>s5lvl20.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet5\s5lvl21.xaml.cs">
+      <DependentUpon>s5lvl21.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet5\s5lvl22.xaml.cs">
+      <DependentUpon>s5lvl22.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet5\s5lvl23.xaml.cs">
+      <DependentUpon>s5lvl23.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet5\s5lvl24.xaml.cs">
+      <DependentUpon>s5lvl24.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet5\s5lvl25.xaml.cs">
+      <DependentUpon>s5lvl25.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet5\s5lvl3.xaml.cs">
+      <DependentUpon>s5lvl3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet5\s5lvl4.xaml.cs">
+      <DependentUpon>s5lvl4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet5\s5lvl5.xaml.cs">
+      <DependentUpon>s5lvl5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet5\s5lvl6.xaml.cs">
+      <DependentUpon>s5lvl6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet5\s5lvl7.xaml.cs">
+      <DependentUpon>s5lvl7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet5\s5lvl8.xaml.cs">
+      <DependentUpon>s5lvl8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet5\s5lvl9.xaml.cs">
+      <DependentUpon>s5lvl9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet4\s4lvl25.xaml.cs">
+      <DependentUpon>s4lvl25.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet4\s4lvl24.xaml.cs">
+      <DependentUpon>s4lvl24.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet4\s4lvl23.xaml.cs">
+      <DependentUpon>s4lvl23.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet4\s4lvl22.xaml.cs">
+      <DependentUpon>s4lvl22.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet4\s4lvl21.xaml.cs">
+      <DependentUpon>s4lvl21.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet4\s4lvl20.xaml.cs">
+      <DependentUpon>s4lvl20.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet4\s4lvl19.xaml.cs">
+      <DependentUpon>s4lvl19.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet4\s4lvl18.xaml.cs">
+      <DependentUpon>s4lvl18.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet4\s4lvl17.xaml.cs">
+      <DependentUpon>s4lvl17.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet4\s4lvl16.xaml.cs">
+      <DependentUpon>s4lvl16.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet4\s4lvl15.xaml.cs">
+      <DependentUpon>s4lvl15.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet4\s4lvl14.xaml.cs">
+      <DependentUpon>s4lvl14.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet4\s4lvl13.xaml.cs">
+      <DependentUpon>s4lvl13.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet4\s4lvl12.xaml.cs">
+      <DependentUpon>s4lvl12.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet4\s4lvl11.xaml.cs">
+      <DependentUpon>s4lvl11.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet4\s4lvl10.xaml.cs">
+      <DependentUpon>s4lvl10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet4\s4lvl9.xaml.cs">
+      <DependentUpon>s4lvl9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet4\s4lvl8.xaml.cs">
+      <DependentUpon>s4lvl8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet4\s4lvl7.xaml.cs">
+      <DependentUpon>s4lvl7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet4\s4lvl6.xaml.cs">
+      <DependentUpon>s4lvl6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet4\s4lvl5.xaml.cs">
+      <DependentUpon>s4lvl5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet4\s4lvl4.xaml.cs">
+      <DependentUpon>s4lvl4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet4\s4lvl3.xaml.cs">
+      <DependentUpon>s4lvl3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet4\s4lvl1.xaml.cs">
+      <DependentUpon>s4lvl1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet4\s4lvl2.xaml.cs">
+      <DependentUpon>s4lvl2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NewlvlMenu.xaml.cs">
+      <DependentUpon>NewlvlMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Credits.xaml.cs">
+      <DependentUpon>Credits.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Istruzioni.xaml.cs">
+      <DependentUpon>Istruzioni.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Info.xaml.cs">
+      <DependentUpon>Info.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="end.xaml.cs">
+      <DependentUpon>end.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet3\s3lvl25.xaml.cs">
+      <DependentUpon>s3lvl25.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet3\s3lvl11.xaml.cs">
+      <DependentUpon>s3lvl11.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sbagliato.xaml.cs">
+      <DependentUpon>sbagliato.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl17.xaml.cs">
+      <DependentUpon>s1lvl17.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl16.xaml.cs">
+      <DependentUpon>s1lvl16.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl12.xaml.cs">
+      <DependentUpon>s1lvl12.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl15.xaml.cs">
+      <DependentUpon>s1lvl15.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl14.xaml.cs">
+      <DependentUpon>s1lvl14.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl13.xaml.cs">
+      <DependentUpon>s1lvl13.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl11.xaml.cs">
+      <DependentUpon>s1lvl11.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl10.xaml.cs">
+      <DependentUpon>s1lvl10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl18.xaml.cs">
+      <DependentUpon>s1lvl18.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl19.xaml.cs">
+      <DependentUpon>s1lvl19.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl21.xaml.cs">
+      <DependentUpon>s1lvl21.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl20.xaml.cs">
+      <DependentUpon>s1lvl20.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl22.xaml.cs">
+      <DependentUpon>s1lvl22.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl23.xaml.cs">
+      <DependentUpon>s1lvl23.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl24.xaml.cs">
+      <DependentUpon>s1lvl24.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl25.xaml.cs">
+      <DependentUpon>s1lvl25.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl27.xaml.cs">
+      <DependentUpon>s1lvl27.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl28.xaml.cs">
+      <DependentUpon>s1lvl28.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl29.xaml.cs">
+      <DependentUpon>s1lvl29.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl30.xaml.cs">
+      <DependentUpon>s1lvl30.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl26.xaml.cs">
+      <DependentUpon>s1lvl26.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl9.xaml.cs">
+      <DependentUpon>s1lvl9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl8.xaml.cs">
+      <DependentUpon>s1lvl8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl5.xaml.cs">
+      <DependentUpon>s1lvl5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl6.xaml.cs">
+      <DependentUpon>s1lvl6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl4.xaml.cs">
+      <DependentUpon>s1lvl4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl3.xaml.cs">
+      <DependentUpon>s1lvl3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl2.xaml.cs">
+      <DependentUpon>s1lvl2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl7.xaml.cs">
+      <DependentUpon>s1lvl7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet2\s2lvl10.xaml.cs">
+      <DependentUpon>s2lvl10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet2\s2lvl20.xaml.cs">
+      <DependentUpon>s2lvl20.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet2\s2lvl21.xaml.cs">
+      <DependentUpon>s2lvl21.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet2\s2lvl18.xaml.cs">
+      <DependentUpon>s2lvl18.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet2\s2lvl16.xaml.cs">
+      <DependentUpon>s2lvl16.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet2\s2lvl15.xaml.cs">
+      <DependentUpon>s2lvl15.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet2\s2lvl14.xaml.cs">
+      <DependentUpon>s2lvl14.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet2\s2lvl1.xaml.cs">
+      <DependentUpon>s2lvl1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet2\s2lvl2.xaml.cs">
+      <DependentUpon>s2lvl2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet2\s2lvl3.xaml.cs">
+      <DependentUpon>s2lvl3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet2\s2lvl4.xaml.cs">
+      <DependentUpon>s2lvl4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet2\s2lvl5.xaml.cs">
+      <DependentUpon>s2lvl5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet2\s2lvl6.xaml.cs">
+      <DependentUpon>s2lvl6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet2\s2lvl7.xaml.cs">
+      <DependentUpon>s2lvl7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet2\s2lvl9.xaml.cs">
+      <DependentUpon>s2lvl9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet2\s2lvl11.xaml.cs">
+      <DependentUpon>s2lvl11.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet2\s2lvl12.xaml.cs">
+      <DependentUpon>s2lvl12.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet2\s2lvl13.xaml.cs">
+      <DependentUpon>s2lvl13.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet2\s2lvl17.xaml.cs">
+      <DependentUpon>s2lvl17.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet2\s2lvl8.xaml.cs">
+      <DependentUpon>s2lvl8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet2\s2lvl24.xaml.cs">
+      <DependentUpon>s2lvl24.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet2\s2lvl25.xaml.cs">
+      <DependentUpon>s2lvl25.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet2\s2lvl19.xaml.cs">
+      <DependentUpon>s2lvl19.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet2\s2lvl22.xaml.cs">
+      <DependentUpon>s2lvl22.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet2\s2lvl23.xaml.cs">
+      <DependentUpon>s2lvl23.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet3\s3lvl1.xaml.cs">
+      <DependentUpon>s3lvl1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet3\s3lvl2.xaml.cs">
+      <DependentUpon>s3lvl2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet3\s3lvl23.xaml.cs">
+      <DependentUpon>s3lvl23.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet3\s3lvl13.xaml.cs">
+      <DependentUpon>s3lvl13.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet3\s3lvl14.xaml.cs">
+      <DependentUpon>s3lvl14.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet3\s3lvl15.xaml.cs">
+      <DependentUpon>s3lvl15.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet3\s3lvl17.xaml.cs">
+      <DependentUpon>s3lvl17.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet3\s3lvl18.xaml.cs">
+      <DependentUpon>s3lvl18.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet3\s3lvl19.xaml.cs">
+      <DependentUpon>s3lvl19.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet3\s3lvl20.xaml.cs">
+      <DependentUpon>s3lvl20.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet3\s3lvl21.xaml.cs">
+      <DependentUpon>s3lvl21.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet3\s3lvl10.xaml.cs">
+      <DependentUpon>s3lvl10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet3\s3lvl12.xaml.cs">
+      <DependentUpon>s3lvl12.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet3\s3lvl16.xaml.cs">
+      <DependentUpon>s3lvl16.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet3\s3lvl22.xaml.cs">
+      <DependentUpon>s3lvl22.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet3\s3lvl24.xaml.cs">
+      <DependentUpon>s3lvl24.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet3\s3lvl3.xaml.cs">
+      <DependentUpon>s3lvl3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet3\s3lvl4.xaml.cs">
+      <DependentUpon>s3lvl4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet3\s3lvl5.xaml.cs">
+      <DependentUpon>s3lvl5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet3\s3lvl6.xaml.cs">
+      <DependentUpon>s3lvl6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet3\s3lvl7.xaml.cs">
+      <DependentUpon>s3lvl7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet3\s3lvl8.xaml.cs">
+      <DependentUpon>s3lvl8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet3\s3lvl9.xaml.cs">
+      <DependentUpon>s3lvl9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VarGlobal.cs" />
+    <Compile Include="setMenu.xaml.cs">
+      <DependentUpon>setMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlSet1\s1lvl1.xaml.cs">
+      <DependentUpon>s1lvl1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lvlMenu.xaml.cs">
+      <DependentUpon>lvlMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XnaFrameworkDispatcherService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="lvlSet8\s8lvl3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet8\s8lvl2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet8\s8lvl1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet8\s8lvl7.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet9\s9lvl2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet9\s9lvl1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet9\s9lvl10.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet9\s9lvl11.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet9\s9lvl12.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet9\s9lvl13.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet9\s9lvl14.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet9\s9lvl15.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet9\s9lvl16.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet9\s9lvl17.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet9\s9lvl18.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet9\s9lvl19.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet9\s9lvl20.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet9\s9lvl3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet9\s9lvl4.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet9\s9lvl5.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet9\s9lvl6.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet9\s9lvl7.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet9\s9lvl8.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet9\s9lvl9.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet8\s8lvl10.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet8\s8lvl11.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet8\s8lvl12.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet8\s8lvl13.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet8\s8lvl14.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet8\s8lvl15.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet8\s8lvl16.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet8\s8lvl17.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet8\s8lvl18.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet8\s8lvl19.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet8\s8lvl20.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet8\s8lvl4.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet8\s8lvl5.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet8\s8lvl6.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet8\s8lvl8.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet8\s8lvl9.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet7\s7lvl3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet7\s7lvl20.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet7\s7lvl19.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet7\s7lvl18.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet7\s7lvl17.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet7\s7lvl16.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet7\s7lvl15.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet7\s7lvl14.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet7\s7lvl13.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet7\s7lvl12.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet7\s7lvl11.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet7\s7lvl10.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet7\s7lvl9.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet7\s7lvl8.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet7\s7lvl7.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet7\s7lvl6.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet7\s7lvl5.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet7\s7lvl4.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet7\s7lvl2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet7\s7lvl1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UltimolvlMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet6\s6lvl1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet6\s6lvl10.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet6\s6lvl11.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet6\s6lvl12.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet6\s6lvl13.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet6\s6lvl14.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet6\s6lvl15.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet6\s6lvl16.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet6\s6lvl17.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet6\s6lvl18.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet6\s6lvl19.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet6\s6lvl2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet6\s6lvl20.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet6\s6lvl21.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet6\s6lvl22.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet6\s6lvl23.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet6\s6lvl24.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet6\s6lvl25.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet6\s6lvl3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet6\s6lvl4.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet6\s6lvl5.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet6\s6lvl6.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet6\s6lvl7.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet6\s6lvl8.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet6\s6lvl9.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet5\s5lvl1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet5\s5lvl10.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet5\s5lvl11.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet5\s5lvl12.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet5\s5lvl13.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet5\s5lvl14.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet5\s5lvl15.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet5\s5lvl16.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet5\s5lvl17.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet5\s5lvl18.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet5\s5lvl19.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet5\s5lvl2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet5\s5lvl20.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet5\s5lvl21.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet5\s5lvl22.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet5\s5lvl23.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet5\s5lvl24.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet5\s5lvl25.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet5\s5lvl3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet5\s5lvl4.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet5\s5lvl5.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet5\s5lvl6.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet5\s5lvl7.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet5\s5lvl8.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet5\s5lvl9.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet4\s4lvl25.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet4\s4lvl24.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet4\s4lvl23.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet4\s4lvl22.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet4\s4lvl21.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet4\s4lvl20.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet4\s4lvl19.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet4\s4lvl18.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet4\s4lvl17.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet4\s4lvl16.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet4\s4lvl15.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet4\s4lvl14.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet4\s4lvl13.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet4\s4lvl12.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet4\s4lvl11.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet4\s4lvl10.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet4\s4lvl9.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet4\s4lvl8.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet4\s4lvl7.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet4\s4lvl6.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet4\s4lvl5.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet4\s4lvl4.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet4\s4lvl3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet4\s4lvl1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet4\s4lvl2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="NewlvlMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Credits.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Istruzioni.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Info.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="end.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet3\s3lvl25.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet3\s3lvl11.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sbagliato.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet1\s1lvl17.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet1\s1lvl16.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet1\s1lvl12.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet1\s1lvl15.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet1\s1lvl14.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet1\s1lvl13.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet1\s1lvl11.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet1\s1lvl10.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet1\s1lvl18.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="lvlSet1\s1lvl19.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="lvlSet1\s1lvl21.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="lvlSet1\s1lvl20.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="lvlSet1\s1lvl22.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="lvlSet1\s1lvl23.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="lvlSet1\s1lvl24.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="lvlSet1\s1lvl25.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="lvlSet1\s1lvl27.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="lvlSet1\s1lvl28.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="lvlSet1\s1lvl29.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="lvlSet1\s1lvl30.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="lvlSet1\s1lvl26.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="lvlSet1\s1lvl9.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet1\s1lvl8.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet1\s1lvl5.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet1\s1lvl6.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet1\s1lvl4.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet1\s1lvl3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet1\s1lvl2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet1\s1lvl7.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="lvlSet2\s2lvl10.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="lvlSet2\s2lvl20.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="lvlSet2\s2lvl21.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet2\s2lvl18.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet2\s2lvl16.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet2\s2lvl15.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet2\s2lvl14.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet2\s2lvl1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet2\s2lvl2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet2\s2lvl3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet2\s2lvl4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="lvlSet2\s2lvl5.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet2\s2lvl6.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet2\s2lvl7.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet2\s2lvl9.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet2\s2lvl11.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet2\s2lvl12.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet2\s2lvl13.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet2\s2lvl17.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet2\s2lvl8.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet2\s2lvl24.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet2\s2lvl25.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet2\s2lvl19.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet2\s2lvl22.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet2\s2lvl23.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet3\s3lvl1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet3\s3lvl2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet3\s3lvl23.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet3\s3lvl13.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet3\s3lvl14.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet3\s3lvl15.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet3\s3lvl17.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet3\s3lvl18.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet3\s3lvl19.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet3\s3lvl20.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet3\s3lvl21.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet3\s3lvl10.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet3\s3lvl12.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet3\s3lvl16.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet3\s3lvl22.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet3\s3lvl24.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet3\s3lvl3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet3\s3lvl4.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet3\s3lvl5.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet3\s3lvl6.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet3\s3lvl7.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet3\s3lvl8.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet3\s3lvl9.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="setMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlSet1\s1lvl1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="lvlMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Smart_Challenge_2013_12_22_10_08_37.sap" />
+    <None Include="TextFont.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationImage.png" />
+    <Content Include="Images\imgLvl8\14b.jpg" />
+    <Content Include="Images\imgLvl8\5b.png" />
+    <Content Include="Images\endBg.jpg" />
+    <Content Include="Images\facebooklogo.png" />
+    <Content Include="Images\imgLvl4\glasswater.png" />
+    <Content Include="Images\imgLvl4\balloon.png" />
+    <Content Include="Images\imgLvl4\chiocciola.png" />
+    <Content Include="Images\imgLvl4\giove.png" />
+    <Content Include="Images\imgLvl4\luna.png" />
+    <Content Include="Images\imgLvl4\marte.png" />
+    <Content Include="Images\imgLvl4\mercurio.png" />
+    <Content Include="Images\imgLvl4\scarafaggiomorto.png" />
+    <Content Include="Images\imgLvl4\scarafaggiovivo.png" />
+    <Content Include="Images\imgLvl4\table.PNG" />
+    <Content Include="Images\imgLvl4\venere.png" />
+    <Content Include="Images\imgLvl2\arca.jpg" />
+    <Content Include="Images\imgLvl2\Dino.jpg" />
+    <Content Include="Images\imgLvl2\flinst.jpg" />
+    <Content Include="Images\imgLvl2\Fred.jpg" />
+    <Content Include="Images\imgLvl2\NY.png" />
+    <Content Include="Images\imgLvl3\pi.png" />
+    <Content Include="Images\imgLvl3\StormLantern.png" />
+    <Content Include="Images\imgLvl5\barca1.png" />
+    <Content Include="Images\imgLvl5\barca2.png" />
+    <Content Include="Images\imgLvl5\barca3.png" />
+    <Content Include="Images\imgLvl5\cavolo.png" />
+    <Content Include="Images\imgLvl5\fiume.png" />
+    <Content Include="Images\imgLvl5\linea.png" />
+    <Content Include="Images\imgLvl5\lupo.png" />
+    <Content Include="Images\imgLvl5\modificata.jpg" />
+    <Content Include="Images\imgLvl5\nuvola.png" />
+    <Content Include="Images\imgLvl5\originale.jpg" />
+    <Content Include="Images\imgLvl5\pecora.png" />
+    <Content Include="Images\imgLvl6\abete.png" />
+    <Content Include="Images\imgLvl6\bomb.png" />
+    <Content Include="Images\imgLvl6\boom.PNG" />
+    <Content Include="Images\imgLvl6\braccia.png" />
+    <Content Include="Images\imgLvl6\candela.png" />
+    <Content Include="Images\imgLvl6\cappello.png" />
+    <Content Include="Images\imgLvl6\christmasball.png" />
+    <Content Include="Images\imgLvl6\christmashat.png" />
+    <Content Include="Images\imgLvl6\modificata2.jpg" />
+    <Content Include="Images\imgLvl6\naso.png" />
+    <Content Include="Images\imgLvl6\neve.png" />
+    <Content Include="Images\imgLvl6\occhi.png" />
+    <Content Include="Images\imgLvl6\originale2.jpg" />
+    <Content Include="Images\imgLvl6\pezzo.png" />
+    <Content Include="Images\imgLvl6\razzo.png" />
+    <Content Include="Images\imgLvl6\renne.png" />
+    <Content Include="Images\imgLvl7\bottigliamex.png" />
+    <Content Include="Images\imgLvl7\bottigliavuota.png" />
+    <Content Include="Images\imgLvl7\cassaaperta.png" />
+    <Content Include="Images\imgLvl7\cassachiusa.png" />
+    <Content Include="Images\imgLvl7\codice.png" />
+    <Content Include="Images\imgLvl7\onde1.png" />
+    <Content Include="Images\imgLvl7\onde2.png" />
+    <Content Include="Images\imgLvl7\onde3.png" />
+    <Content Include="Images\imgLvl7\polpo.png" />
+    <Content Include="Images\imgLvl7\rondine.png" />
+    <Content Include="Images\imgLvl8\car.png" />
+    <Content Include="Images\imgLvl8\cartaF.png" />
+    <Content Include="Images\imgLvl8\cartaQ.png" />
+    <Content Include="Images\imgLvl8\cartaC.png" />
+    <Content Include="Images\imgLvl8\goku.png" />
+    <Content Include="Images\imgLvl8\hamtaro.png" />
+    <Content Include="Images\imgLvl8\kety.jpg" />
+    <Content Include="Images\imgLvl8\kety2.jpg" />
+    <Content Include="Images\imgLvl8\lamu.png" />
+    <Content Include="Images\imgLvl8\lupin.png" />
+    <Content Include="Images\imgLvl8\men.png" />
+    <Content Include="Images\imgLvl8\pollon.png" />
+    <Content Include="Images\imgLvl8\quad.png" />
+    <Content Include="Images\imgLvl8\moto.png" />
+    <Content Include="Images\imgLvl8\pezz1.png" />
+    <Content Include="Images\imgLvl8\pezz2.png" />
+    <Content Include="Images\imgLvl8\pezz3.png" />
+    <Content Include="Images\imgLvl8\pezz4.png" />
+    <Content Include="Images\imgLvl8\puzzleleon.jpg" />
+    <Content Include="Images\imgLvl8\ranma1.png" />
+    <Content Include="Images\imgLvl8\Ron_Weasley.jpg" />
+    <Content Include="Images\imgLvl8\secchiello.png" />
+    <Content Include="Images\imgLvl8\sportbike.png" />
+    <Content Include="Images\imgLvl9\alieno1.png" />
+    <Content Include="Images\imgLvl9\alieno2.png" />
+    <Content Include="Images\imgLvl9\alieno3.png" />
+    <Content Include="Images\imgLvl9\asteroidi.png" />
+    <Content Include="Images\imgLvl9\citta.png" />
+    <Content Include="Images\imgLvl9\mazza.png" />
+    <Content Include="Images\imgLvl9\stellacadente.png" />
+    <Content Include="Images\imgLvl9\superman.png" />
+    <Content Include="Images\imgLvl9\terra.png" />
+    <Content Include="Images\imgLvl9\ufo.png" />
+    <Content Include="Images\imgLvl9\uovo1.png" />
+    <Content Include="Images\imgLvl9\uovo2.png" />
+    <Content Include="Images\imgLvl9\uovocotto.png" />
+    <Content Include="Images\lv1trasparente.png" />
+    <Content Include="Images\imgLvl9\mensola.png" />
+    <Content Include="Images\nc.png" />
+    <Content Include="Images\otherapps.jpg" />
+    <Content Include="Images\starFull.png" />
+    <Content Include="Images\stellaEmp.png" />
+    <Content Include="Images\twitterlogo.png" />
+    <Content Include="Images\imgLvl8\beachball.png" />
+    <Content Include="Images\imgLvl8\bicchiere.png" />
+    <Content Include="Images\imgLvl8\bicchiere2.png" />
+    <Content Include="Images\imgLvl8\castello.png" />
+    <Content Include="Images\imgLvl8\granchio.png" />
+    <Content Include="Images\imgLvl8\granchio2.png" />
+    <Content Include="Images\imgLvl8\castello2.png" />
+    <Content Include="Images\imgLvl8\spiaggia.png" />
+    <Content Include="Images\imgLvl8\trg1.png" />
+    <Content Include="Images\imgLvl8\trg2.png" />
+    <Content Include="Images\imgLvl8\trg3.png" />
+    <Content Include="Images\imgLvl8\trg4.png" />
+    <Content Include="SplashScreenImage.jpg" />
+    <Content Include="tile.jpg" />
+    <Resource Include="ApplicationIcon.jpg" />
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\Theme.mp3" />
+    <Resource Include="Images\setIcon.png" />
+    <Resource Include="Images\bg2.jpg" />
+    <Resource Include="Images\menu.jpg" />
+    <Resource Include="Images\lvl1.png" />
+    <Resource Include="Images\lvl2.png" />
+    <Resource Include="Images\lvl3.png" />
+    <Resource Include="Images\bgLvl.jpg" />
+    <Resource Include="Images\imgLvl1\button.png" />
+    <Resource Include="Images\imgLvl1\android.png" />
+    <Resource Include="Images\imgLvl1\apple.png" />
+    <Resource Include="Images\imgLvl1\wp7.jpg" />
+    <Resource Include="Images\imgLvl1\clickBt.png" />
+    <Resource Include="Images\imgLvl1\puzzleOk.png" />
+    <Resource Include="Images\imgLvl1\puzzleNo1.png" />
+    <Resource Include="Images\imgLvl1\puzzleNo2.png" />
+    <Resource Include="Images\imgLvl1\puzzleNo3.png" />
+    <Content Include="Images\arr.png" />
+    <Content Include="Images\bar.png" />
+    <Content Include="Images\imgLvl1\arr1.png" />
+    <Content Include="Images\imgLvl1\orologio.png" />
+    <Content Include="Images\imgLvl1\ScatolaAperta.png" />
+    <Content Include="Images\imgLvl1\ScatolaChiusa.png" />
+    <Content Include="Images\imgLvl2\coperta.png" />
+    <Content Include="Images\imgLvl1\Dolcetto.png" />
+    <Content Include="Images\imgLvl1\btn_12.png" />
+    <Content Include="Images\imgLvl1\caniniF.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\imgLvl1\caniniT.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Images\imgLvl1\eggDown.png" />
+    <Resource Include="Images\imgLvl1\eggFull.png" />
+    <Resource Include="Images\imgLvl1\eggUp.png" />
+    <Content Include="Images\imgLvl1\eightF.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Images\imgLvl1\leftArrow1.png" />
+    <Resource Include="Images\imgLvl1\rightArrow1.png" />
+    <Resource Include="Images\imgLvl1\puzzleFull.jpg" />
+    <Resource Include="Images\imgLvl1\puzzleEmpty.png" />
+    <Content Include="Images\imgLvl1\fArancione.png" />
+    <Content Include="Images\imgLvl1\fBlu.png" />
+    <Content Include="Images\imgLvl1\fGialla.png" />
+    <Content Include="Images\imgLvl1\fRosa.png" />
+    <Content Include="Images\imgLvl1\fRossa.png" />
+    <Content Include="Images\imgLvl1\fVerde.png" />
+    <Content Include="Images\imgLvl1\fViola.png" />
+    <Content Include="Images\imgLvl1\point.png" />
+    <Content Include="Images\imgLvl1\puntointerrogativo.png" />
+    <Content Include="Images\imgLvl1\star.png" />
+    <Content Include="Images\imgLvl2\background.png" />
+    <Content Include="Images\imgLvl2\bilancia.png" />
+    <Content Include="Images\imgLvl2\bilancia1.png" />
+    <Content Include="Images\imgLvl2\bilancia2.png" />
+    <Content Include="Images\imgLvl2\caffe.png" />
+    <Content Include="Images\imgLvl2\caldo.png" />
+    <Content Include="Images\imgLvl2\cartoon-mascot-32.jpg" />
+    <Content Include="Images\imgLvl2\circle.png" />
+    <Content Include="Images\imgLvl2\cloth1.png" />
+    <Content Include="Images\imgLvl2\cloth2.png" />
+    <Content Include="Images\imgLvl2\cloth3.png" />
+    <Content Include="Images\imgLvl2\cola.png" />
+    <Content Include="Images\imgLvl2\costa.png" />
+    <Content Include="Images\imgLvl2\cubetto2.png" />
+    <Content Include="Images\imgLvl2\cubettoGIU.png" />
+    <Content Include="Images\imgLvl2\cubettoSU.png" />
+    <Content Include="Images\imgLvl2\DonkeyKong.png" />
+    <Content Include="Images\imgLvl2\door1.png" />
+    <Content Include="Images\imgLvl2\door2.png" />
+    <Content Include="Images\imgLvl2\door3.png" />
+    <Content Include="Images\imgLvl2\freddo.png" />
+    <Content Include="Images\imgLvl2\Happy1.png" />
+    <Content Include="Images\imgLvl2\HappyDif.png" />
+    <Content Include="Images\imgLvl2\hat1.png" />
+    <Content Include="Images\imgLvl2\hat2.png" />
+    <Content Include="Images\imgLvl2\hat3.png" />
+    <Content Include="Images\imgLvl2\iceberg.png" />
+    <Content Include="Images\imgLvl2\key.png" />
+    <Content Include="Images\imgLvl2\labirinto.png" />
+    <Content Include="Images\imgLvl2\Mario.png" />
+    <Content Include="Images\imgLvl2\north-pole-sign_t.jpg" />
+    <Content Include="Images\imgLvl2\orso.png" />
+    <Content Include="Images\imgLvl2\Pacman_HD.png" />
+    <Content Include="Images\imgLvl2\pokemon.jpg" />
+    <Content Include="Images\imgLvl2\pokemon2.jpg" />
+    <Content Include="Images\imgLvl2\pozza.png" />
+    <Content Include="Images\imgLvl2\shoes1.png" />
+    <Content Include="Images\imgLvl2\shoes2.png" />
+    <Content Include="Images\imgLvl2\shoes3.png" />
+    <Content Include="Images\imgLvl2\sole.png" />
+    <Content Include="Images\imgLvl2\Sonic.png" />
+    <Content Include="Images\imgLvl2\titanic2.png" />
+    <Content Include="Images\imgLvl2\topo.png" />
+    <Content Include="Images\imgLvl2\te.png" />
+    <Content Include="Images\imgLvl2\zattera.png" />
+    <Content Include="Images\imgLvl3\albero.png" />
+    <Content Include="Images\imgLvl3\albero2.png" />
+    <Content Include="Images\imgLvl3\antenna.png" />
+    <Content Include="Images\imgLvl3\balena.png" />
+    <Content Include="Images\imgLvl3\button2.png" />
+    <Content Include="Images\imgLvl3\button3.png" />
+    <Content Include="Images\imgLvl3\buttonb.png" />
+    <Content Include="Images\imgLvl3\Cage.png" />
+    <Content Include="Images\imgLvl3\Cage1.png" />
+    <Content Include="Images\imgLvl3\Cage2.png" />
+    <Content Include="Images\imgLvl3\delfino.png" />
+    <Content Include="Images\imgLvl3\Door.png" />
+    <Content Include="Images\imgLvl3\erba.png" />
+    <Content Include="Images\imgLvl3\fuoco.png" />
+    <Content Include="Images\imgLvl3\key2.png" />
+    <Content Include="Images\imgLvl3\lab.jpg" />
+    <Content Include="Images\imgLvl3\lancia.png" />
+    <Content Include="Images\imgLvl3\leva.png" />
+    <Content Include="Images\lvl3_3.png" />
+    <Content Include="Images\imgLvl3\orca.png" />
+    <Content Include="Images\peng1.png" />
+    <Content Include="Images\peng2.png" />
+    <Content Include="Images\peng3.png" />
+    <Content Include="Images\imgLvl3\pesce.png" />
+    <Content Include="Images\imgLvl3\piece.png" />
+    <Content Include="Images\imgLvl3\piece1.png" />
+    <Content Include="Images\imgLvl3\piece2.png" />
+    <Content Include="Images\imgLvl3\piece4.png" />
+    <Content Include="Images\imgLvl3\Pistola.png" />
+    <Content Include="Images\imgLvl3\powButt.png" />
+    <Content Include="Images\imgLvl3\powButt2.png" />
+    <Content Include="Images\imgLvl3\puzzle.png" />
+    <Content Include="Images\imgLvl3\ramo.png" />
+    <Content Include="Images\imgLvl3\ramo1.png" />
+    <Content Include="Images\imgLvl3\ramo2.png" />
+    <Content Include="Images\imgLvl3\sassi.png" />
+    <Content Include="Images\imgLvl3\spada.png" />
+    <Content Include="Images\imgLvl3\squalo.png" />
+    <Content Include="Images\imgLvl3\tree.png" />
+    <Content Include="Images\imgLvl3\trg.png" />
+    <Content Include="Images\lvl2_2.png" />
+    <Content Include="Images\imgLvl1\poison.png" />
+    <Content Include="Images\imgLvl2\bluPoint.png" />
+    <Content Include="Images\imgLvl2\vioPoint.png" />
+    <Content Include="Images\tb.png" />
+    <Content Include="Images\wrong.jpg" />
+    <Resource Include="Images\imgLvl1\Basket.png" />
+    <Resource Include="Images\imgLvl1\Calcio.png" />
+    <Resource Include="Images\imgLvl1\Rugby.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

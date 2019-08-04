@@ -1,0 +1,51 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Smart_Challenge.sbagliato"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:my="clr-namespace:Microsoft.Advertising.Mobile.UI;assembly=Microsoft.Advertising.Mobile.UI"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape" Orientation="Landscape"
+    mc:Ignorable="d" d:DesignHeight="480" d:DesignWidth="800"
+    shell:SystemTray.IsVisible="False">
+    <Grid Height="480" x:Name="grid1" Width="800">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="33*"/>
+            <ColumnDefinition Width="47*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="sfondo1BG" Source="/Images/wrong.jpg" Stretch="Fill" Grid.ColumnSpan="2" />
+        <TextBlock x:Name="wrong" HorizontalAlignment="Left" Height="92" Margin="193,103,0,0" TextWrapping="Wrap" Text="wrong" VerticalAlignment="Top" Width="407" Foreground="#FF17FF00" FontFamily="TextFont.ttf#TextFont" FontSize="72" Grid.ColumnSpan="2" TextAlignment="Center"/>
+        <Image x:Name="arrow" HorizontalAlignment="Left" Height="53" Margin="30,265,0,0" VerticalAlignment="Top" Width="122" Source="/Images/arr.png" Visibility="Collapsed"/>
+        <Image x:Name="bar" HorizontalAlignment="Left" Height="31" Margin="195,316,0,0" VerticalAlignment="Top" Width="461" Source="/Images/bar.png" Grid.ColumnSpan="2" Visibility="Collapsed"/>
+        <TextBlock x:Name="checkpoint" HorizontalAlignment="Left" Height="51" Margin="99,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="656" Foreground="#FF17FF00" FontFamily="TextFont.ttf#TextFont" FontSize="48" Text="ritorna al checkpoint" Tap="checkpoint_Tap" Grid.ColumnSpan="2" TextAlignment="Center" Visibility="Collapsed"/>
+        <TextBlock x:Name="menu" HorizontalAlignment="Left" Height="52" Margin="135,347,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="589" Foreground="#FF17FF00" FontFamily="TextFont.ttf#TextFont" FontSize="48" Tap="menu_Tap" Grid.ColumnSpan="2" TextAlignment="Center"/>
+        <Grid HorizontalAlignment="Center" Height="98" VerticalAlignment="Top" Width="575" Grid.ColumnSpan="2" Margin="0,10,0,0">
+            <my:AdControl x:Name="firstAd" Width="480" Height="80" AdUnitId="10294586" ApplicationId="e1a80477-0312-4bf3-8ab7-7344fdd5c9e3" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        </Grid>
+        <ad:InneractiveAd
+			xmlns:ad="clr-namespace:Inneractive.Ad;assembly=Inneractive.Ad"
+			AppID="AresDevelop_SmartChallenge_WP"
+			AdType="IaAdType_Banner"
+			ReloadTime="60"
+			x:Name="InneractiveXamlAd" Margin="157,410,129,10" Grid.ColumnSpan="2"
+       />
+    </Grid>
+
+    <!--LayoutRoot è la griglia radice in cui viene inserito tutto il contenuto della pagina-->
+    <!--Codice di esempio che illustra l'utilizzo di ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Pulsante 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Pulsante 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="Voce di menu 1"/>
+                <shell:ApplicationBarMenuItem Text="Voce di menu 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+</phone:PhoneApplicationPage>

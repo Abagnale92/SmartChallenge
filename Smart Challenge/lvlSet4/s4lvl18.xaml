@@ -1,0 +1,38 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Smart_Challenge.s4lvl18"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape" Orientation="Landscape"
+    mc:Ignorable="d" d:DesignHeight="480" d:DesignWidth="800"
+    shell:SystemTray.IsVisible="False" Loaded="PhoneApplicationPage_Loaded">
+    <Grid Height="480" x:Name="grid1" Width="800">
+        <Image Height="480" HorizontalAlignment="Left" x:Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="800" Source="/Smart Challenge;component/Images/bgLvl.jpg" />
+        <TextBlock FontFamily="TextFont.ttf#TextFont" FontSize="32" FontWeight="SemiBold" Foreground="#FF006CFF" HorizontalAlignment="Center" Margin="0,22,0,398" x:Name="Instr" Text="" TextAlignment="Center" TextWrapping="Wrap" Width="800" />
+        <Image x:Name="p1" HorizontalAlignment="Left" Height="100" Margin="73,125,0,0" VerticalAlignment="Top" Width="100" Source="/Images/peng3.png" Tap="b_Tap"/>
+        <Image x:Name="p2" HorizontalAlignment="Left" Height="100" Margin="156,319,0,0" VerticalAlignment="Top" Width="100" Source="/Images/peng1.png" Tap="p_Tap"/>
+        <Image x:Name="p5" HorizontalAlignment="Left" Height="100" Margin="373,144,0,0" VerticalAlignment="Top" Width="100" Source="/Images/peng2.png" Tap="p_Tap"/>
+        <Image x:Name="p4" HorizontalAlignment="Left" Height="100" Margin="585,347,0,0" VerticalAlignment="Top" Width="100" Source="/Images/peng2.png" Tap="p_Tap"/>
+        <Image x:Name="p3" HorizontalAlignment="Left" Height="100" Margin="643,105,0,0" VerticalAlignment="Top" Width="100" Source="/Images/peng1.png" Tap="p_Tap"/>
+        <Image x:Name="p6" HorizontalAlignment="Left" Height="100" Margin="395,297,0,0" VerticalAlignment="Top" Width="100" Source="/Images/peng3.png" Tap="b_Tap"/>
+    </Grid>
+
+    <!--LayoutRoot è la griglia radice in cui viene inserito tutto il contenuto della pagina-->
+    <!--Codice di esempio che illustra l'utilizzo di ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Pulsante 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Pulsante 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="Voce di menu 1"/>
+                <shell:ApplicationBarMenuItem Text="Voce di menu 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+</phone:PhoneApplicationPage>
